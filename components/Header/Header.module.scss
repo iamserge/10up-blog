@@ -1,0 +1,19 @@
+@import '../../styles/config/variables.scss';
+
+.logo {
+    color: white;
+    padding-left: 80px;
+    font-size: 24px;
+    cursor: pointer;
+    &__image {
+        width: 47px;
+        &-container {
+            padding: 26px 20px 5px 17px;
+            background: $grey;
+            position: absolute;
+            left: 0;
+            top: -16px;
+            border-radius: 100px;
+        }
+    }
+}

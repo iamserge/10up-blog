@@ -1,0 +1,47 @@
+@import "../../styles/config/variables.scss";
+
+.post {
+    width: 800px;    
+    margin: 0 auto 40px auto;
+    padding-bottom: 40px;
+    position: relative;
+    @media screen and (max-width: 1239px) {
+        width: auto;
+    }
+    &:after {
+        content: "";
+        position: absolute;
+        width: 40%;
+        margin: 0 auto;
+        bottom: 0;
+        height: 1px;
+        opacity: 0.1;
+        background-color: $grey;
+        left: 30%;
+    }
+    h2 {
+        text-align: left;
+        font-size: 30px;
+        margin-bottom: 10px;
+        font-weight: normal;
+        a {
+            color: black;
+        }
+    }
+    p {
+        line-height: 26px;
+    }
+    strong {
+        text-decoration: underline;
+    }
+    
+}
+.read-more {
+    position: absolute;
+    right: 0;
+    bottom: 10px;
+    font-size: 16px;
+    a {
+        color: black;
+    }
+}

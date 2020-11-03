@@ -1,0 +1,55 @@
+{
+  "name": "10up-blog",
+  "version": "1.0.0",
+  "description": "Next.js + WordPress blog",
+  "author": "Sergejs Radkevics",
+  "license": "MIT",
+  "repository": "https://github.com/iamserge/10up-blog.git",
+  "engines": {
+    "node": ">=10 <11"
+  },
+  "private": true,
+  "scripts": {
+    "build": "next build",
+    "ci": "server-test 3000",
+    "deploy": "now",
+    "dev": "cross-env NODE_OPTIONS='--inspect' next dev",
+    "start": "next start",
+    "test": "jest",
+    "test:watch": "jest --watch"
+  },
+  "dependencies": {
+    "next": "9.5.5",
+    "nprogress": "^0.2.0",
+    "react": "16.14.0",
+    "react-dom": "16.14.0",
+    "universal-cookie": "^4.0.4"
+  },
+  "devDependencies": {
+    "@testing-library/react": "^11.1.0",
+    "@types/jest": "^26.0.15",
+    "@types/node": "^14.14.2",
+    "@types/react": "^16.9.53",
+    "@types/react-dom": "^16.9.8",
+    "@zeit/next-css": "^1.0.1",
+    "cross-env": "^7.0.2",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.5",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^26.6.1",
+    "now": "^20.1.2",
+    "react-test-renderer": "^16.14.0",
+    "sass": "^1.28.0",
+    "start-server-and-test": "^1.11.5",
+    "typescript": "^4.0.3"
+  },
+  "jest": {
+    "setupFiles": [
+      "./setupTests.js"
+    ],
+    "moduleNameMapper": {
+      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__mocks__/fileMock.js",
+      "\\.(css|scss)$": "identity-obj-proxy"
+    }
+  }
+}

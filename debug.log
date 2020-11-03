@@ -1,0 +1,2 @@
+[1102/215145.684:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)
+[1102/222235.814:ERROR:filesystem_win.cc(129)] GetFileAttributes c:\Users\sradkevics\AppData\Roaming\Code\User\workspaceStorage\981d269063e05cc1eef001c53f6ad7e9\ms-vscode.js-debug\.profile\Crashpad\attachments\1952fd42-c175-4389-b787-ef63f17d9187: The system cannot find the path specified. (0x3)

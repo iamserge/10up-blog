@@ -1,0 +1,39 @@
+@import './config/variables.scss';
+
+@import './header';
+@import './layout';
+@import './posts';
+@import './nprogress';
+
+.page {
+    &-heading {
+        margin: 0 0 40px 0;
+        background: $lightGrey;    
+        text-align: center;
+        padding: 80px 0;
+        font-size: 35px;
+        font-weight: normal;
+        span {
+            text-transform: capitalize;
+            color: $red;
+            font-weight: bold;
+        }
+    }
+    &-content {
+        max-width: 1240px;
+        margin: 0 auto;
+        p {
+            line-height: 26px;
+            a {
+                color: black;
+            }
+        }
+        img {
+            max-width: 100%;
+        }
+        @media screen and (max-width: 1239px) {
+            margin: 10px 20px;
+            box-sizing: border-box;   
+        }
+    }
+}

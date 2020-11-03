@@ -1,0 +1,14 @@
+@import "../../styles/config/variables.scss";
+
+.welcome {
+    background: $lightGrey;    
+    text-align: center;
+    padding: 80px 0;
+    font-size: 35px;
+    span {
+        text-transform: capitalize;
+        color: $red;
+        font-weight: bold;
+    }
+
+}

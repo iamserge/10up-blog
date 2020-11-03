@@ -14,9 +14,10 @@
     "ci": "server-test 3000",
     "deploy": "now",
     "dev": "cross-env NODE_OPTIONS='--inspect' next dev",
-    "start": "next start",
+    "start": "next start -p $PORT",
     "test": "jest",
-    "test:watch": "jest --watch"
+    "test:watch": "jest --watch",
+    "heroku-postbuild": "npm run build"
   },
   "dependencies": {
     "next": "9.5.5",

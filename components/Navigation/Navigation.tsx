@@ -24,11 +24,11 @@ const Navigation = () => {
                     )
                 })}
                 { loggedIn ? (
-                     <li href="#" className="logged-in menu-item menu-item-type-custom menu-item-object-custom menu-item-1915">
-                        <a onClick={logOut}>Logout</a>
+                     <li  className="logged-in menu-item menu-item-type-custom menu-item-object-custom menu-item-1915">
+                        <a href="#" onClick={logOut}>Logout</a>
                     </li>
                 ) : (
-                    <li href="#" className="logged-out menu-item menu-item-type-custom menu-item-object-custom menu-item-1915">
+                    <li  className="logged-out menu-item menu-item-type-custom menu-item-object-custom menu-item-1915">
                         <Link href="/login">Login</Link>
                     </li>
                 )}
